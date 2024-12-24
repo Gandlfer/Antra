@@ -1,2 +1,28 @@
 Orientation
 ------------------------------------------------
+SQL Server Installaton and SMSS
+Visual Studio + Add on ASPNet and Azure
+
+Day 1
+---------------------------------------------------------------------
+DBMS is database management system
+code 0 to 12 rules (total 13 rules) needed to be followed to be rdbms
+SQL server - Process user queries as services
+SQL agent - for automation
+SQL Server integration services - ETL (Extract transform load) to transform data from one db to another
+SQL Analysis service - OLTP day to day transfer, OLAP stores history data
+SQL Reporting services - for compiling db reports into data, graph
+System database - comes prebuilt when install sql server
+1. master - store all databases information
+2. model - template for new database
+3. msdb - ETL services related job for sql agents
+4. tempdb - caching for query calls when you first login, delete cache when logout
+5. mssqlresources - hidden file, predefined function library
+
+When first create a db
+2 types of file
+Primary file - actual data is stored
+Log file - store data changes temperary, for roll back like git revert, once permenant will push to primary file
+
+Dont use Select *, use Select [column name] even if you want all columns due to performance issue
+
